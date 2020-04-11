@@ -3,18 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie-edge">
     <title>Shopping Cart</title>
-<!-- font awesome -->
-<link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-
 <!-- custom css -->
 <link rel="stylesheet" href="styles.css"></link>
 </head>
 <body>
-  <i class="fas fa-home"></i>
-  <i class="fa fas"></i>
-  <i class="fas fa-camera fa-3x"></i>  
-  <i class="fas fa-bus fa-lg"></i>
+  <script src="https://kit.fontawesome.com/615c54002c.js" crossorigin="anonymous"></script>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <img src="./images/logo.png" alt="store logo" />
+      <div class="cart-btn">
+        <span class="nav-icon">
+         <i class ="fas fa-cart-plus"></i> 
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar-->
+  <!--hero-->
+  <header class="hero">
+    <div class="banner">
+      <h1 class="banner-title">dress collection</h1>
+      <button class="banner-btn">shop now</button>
+    </div>
+  </header>
+  <!--end of hero -->
+  <!--products-->
+  <section class="products">
+    <div class="section-title">
+      <h2>our products</h2>
+    </div>
+    <div class="products-center">
+     <!---single product-->
+    <!--<article class="product">
+        <div class="img-container">
+          <img src="./images/bridal.jpeg" alt="product" class="product-img">
+        <button class="bag-btn" data-id="1">
+          <i class="fas fa-shopping-cart"></i>
+          add to bag
+        </button>
+        </img>
+        </div>
+        <h3>Bridal Gown</h3>
+        <h4>$256</h4>
+      </article>*/
+       <!-- end of single product-->
+       <!-- cart -->
+       <div class="cart-overlay">
+         <div class="cart">
+           <span class="close-cart">
+             <i class="fas fa-window-close"></i>
+           </span>
+           <h2>your cart</h2>
+           <div class="cart-content">
+             <!-- cart item -->
+             <div class="cart-item">
+               <img src="./images/bridal.jpeg" alt="product" />
+               <div>
+                 <h4>bridal gown</h4>
+                 <h5>$256.00</h5>
+                 <span class="remove-item">remove</span>
+               </div>
+               <div>
+                 <i class="fas fa-chevron-up"></i>
+                 <p class="item-amount">1</p>
+                 <i class="fas fa-chevron-down"></i>
+               </div>
+             </div>
+             <!-- end of cart item -->
+           </div>
+           <div class="cart-footer">
+             <h3>your total : $ <span class="cart-total">0</span></h3>
+             <button class="clear-cart banner-btn">clear cart</button>
+           </div>
+         </div>
+       </div>
+       <!-- end of cart -->
+    </div>
+  </section>
+  <!--end of products-->
   <script src="app.js"></script>  
 </body>
 </html>
